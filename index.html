@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Felipe Ortega | LinkedIn Positioning Review</title>
+<style>
+:root{
+  --ink:#121615; --muted:#66706b; --paper:#f5f6f2; --card:#ffffff;
+  --line:#dfe4df; --green:#62f28a; --green-dark:#173c2a; --accent:#dff8e5;
+  --max:1180px; --radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit}
+.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(245,246,242,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(223,228,223,.8)}
+.nav{height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800}
+.navlinks{display:flex;gap:22px;font-size:12px;color:var(--muted)}
+.navlinks a{text-decoration:none}
+.hero{background:#101513;color:#fff;padding:90px 0 84px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:end}
+.eyebrow{color:var(--green);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;margin-bottom:22px}
+h1,h2,h3{margin:0;letter-spacing:-.035em;line-height:1.08}
+h1{font-size:clamp(46px,7vw,88px);max-width:850px}
+.hero p{font-size:19px;color:#c7d0ca;max-width:680px;margin:26px 0 0}
+.hero-note{border-left:2px solid var(--green);padding-left:22px;color:#d8dfda}
+.hero-note strong{display:block;color:#fff;font-size:17px;margin-bottom:8px}
+main{padding:74px 0}
+.section{padding:78px 0;border-top:1px solid var(--line);scroll-margin-top:80px}
+.section:first-child{border-top:0;padding-top:0}
+.kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:16px}
+h2{font-size:clamp(34px,4.5vw,58px);max-width:780px}
+.lead{font-size:18px;color:var(--muted);max-width:760px;margin:18px 0 0}
+.insights{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 12px 34px rgba(18,22,21,.045)}
+.card .num{font-size:12px;color:var(--green-dark);font-weight:900;letter-spacing:.1em}
+.card h3{font-size:22px;margin-top:26px}
+.card p{color:var(--muted);margin:12px 0 0}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+.compare .panel{padding:32px;border-radius:var(--radius);border:1px solid var(--line);background:#fff}
+.compare .panel.after{background:#102018;color:#fff;border-color:#102018}
+.label{font-size:11px;text-transform:uppercase;letter-spacing:.14em;font-weight:800;color:var(--muted)}
+.after .label{color:#8edda3}
+.quote{font-size:25px;line-height:1.35;letter-spacing:-.02em;margin:18px 0 0}
+.muted{color:var(--muted)}
+.headlines{display:grid;gap:14px;margin-top:30px}
+.headline{display:grid;grid-template-columns:58px 1fr auto;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 20px 20px 16px}
+.opt{width:42px;height:42px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font-weight:900;color:var(--green-dark)}
+.headline-text{font-size:20px;font-weight:750;line-height:1.3}
+.rationale{font-size:13px;color:var(--muted);margin-top:5px}
+.copy{border:1px solid #b9c4bc;background:#fff;border-radius:10px;padding:10px 14px;font-weight:800;cursor:pointer}
+.copy:hover{background:#f0f5f1}
+.copy:focus-visible{outline:3px solid rgba(98,242,138,.45);outline-offset:2px}
+.about-box{margin-top:30px;background:#102018;color:#fff;border-radius:24px;padding:34px;position:relative}
+.about-copy{white-space:pre-wrap;font-size:17px;line-height:1.75;max-width:880px}
+.about-box .copy{position:absolute;right:24px;top:24px}
+.featured{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.featured .card{min-height:210px}
+.banner-box{margin-top:30px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:34px}
+.banner-preview{height:210px;border-radius:16px;background:linear-gradient(135deg,#101513,#183326);display:flex;align-items:center;padding:30px;color:#fff;overflow:hidden;position:relative}
+.banner-preview:after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:-70px;top:-70px;background:rgba(98,242,138,.12)}
+.banner-preview h3{font-size:30px;max-width:600px;position:relative;z-index:1}
+.banner-preview span{color:var(--green)}
+.shift{display:grid;grid-template-columns:1fr 80px 1fr;align-items:stretch;gap:16px;margin-top:30px}
+.shift .box{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}
+.arrow{display:grid;place-items:center;font-size:30px;color:var(--green-dark);font-weight:900}
+.cta{background:#102018;color:#fff;border-radius:28px;padding:44px;display:flex;justify-content:space-between;gap:30px;align-items:end}
+.cta p{color:#c7d0ca;max-width:700px}
+.small{font-size:13px;color:var(--muted)}
+footer{padding:42px 0 70px;color:var(--muted);font-size:12px}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){
+  .hero-grid,.compare,.shift{grid-template-columns:1fr}
+  .insights,.featured{grid-template-columns:1fr}
+  .arrow{display:none}
+  .navlinks{display:none}
+  .headline{grid-template-columns:48px 1fr}
+  .headline .copy{grid-column:2;justify-self:start}
+}
+@media(max-width:560px){
+  .wrap{width:min(calc(100% - 28px),var(--max))}
+  .hero{padding:66px 0}
+  main{padding:50px 0}
+  .section{padding:58px 0}
+  h1{font-size:48px}
+  .hero p{font-size:17px}
+  .about-box{padding:24px}
+  .about-box .copy{position:static;margin-bottom:18px}
+  .cta{padding:30px;display:block}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <div class="brand">Private LinkedIn Review</div>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="#overview">Overview</a><a href="#positioning">Positioning</a><a href="#headline">Headline</a>
+      <a href="#about">About</a><a href="#featured">Featured</a><a href="#banner">Banner</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">LinkedIn Positioning Review</div>
+      <h1>Prepared for Felipe Ortega.</h1>
+      <p>A clearer founder profile for the work you are now doing around AI, food operations, sustainability, and NegentropyLabs.</p>
+    </div>
+    <div class="hero-note">
+      <strong>The biggest opportunity</strong>
+      Your profile already signals innovation and entrepreneurship. The next step is to make the business problem, audience, and product you are building immediately obvious.
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+<section id="overview" class="section reveal">
+  <div class="kicker">01 / What I found</div>
+  <h2>Move from broad innovation language to a specific founder position.</h2>
+  <p class="lead">Your current profile talks about innovation, project development, business opportunities, and execution. Your public company positioning is much more specific: AI-powered operational intelligence for food and hospitality, with food-waste prevention, better purchasing and production decisions, traceability, and compliance at the center.</p>
+  <div class="insights">
+    <article class="card"><div class="num">01</div><h3>Lead with the current company.</h3><p>The supplied profile export still presents you as “Co-Founder of HubGoal,” while your experience identifies NegentropyLabs as your current company and role.</p></article>
+    <article class="card"><div class="num">02</div><h3>Make the buyer visible.</h3><p>A visitor should quickly understand that the work is for food and hospitality operators, not simply for “companies interested in innovation.”</p></article>
+    <article class="card"><div class="num">03</div><h3>Turn sustainability into an operating story.</h3><p>Your strongest differentiation is not sustainability alone. It is using AI and operational data to make food operations more measurable, predictive, and actionable.</p></article>
+  </div>
+</section>
+
+<section id="positioning" class="section reveal">
+  <div class="kicker">02 / Your current positioning</div>
+  <h2>Strong founder energy. Too much interpretation required.</h2>
+  <div class="compare">
+    <div class="panel"><div class="label">Current profile signal</div><div class="quote">“Co-Founder of HubGoal”</div><p class="muted">The supplied profile export pairs this title with an About section centered on innovation, project development, new business opportunities, strategy, technology, and execution.</p></div>
+    <div class="panel after"><div class="label">Recommended signal</div><div class="quote">Founder building AI-powered food operations technology.</div><p>Make NegentropyLabs and ODAS the center of gravity. Keep innovation and sustainability as supporting themes rather than the primary description.</p></div>
+  </div>
+  <p class="small" style="margin-top:18px">The public LinkedIn profile now identifies NegentropyLabs and describes Negentropy as an AI platform for industrial-scale food management. The supplied profile export is therefore best treated as a snapshot rather than a perfect representation of the live profile.</p>
+</section>
+
+<section id="headline" class="section reveal">
+  <div class="kicker">03 / Headline</div>
+  <h2>Your current headline can do more of the explaining.</h2>
+  <p class="lead">If someone discovers you through a post, a referral, an event, or NegentropyLabs, they should not have to work out what you build or who it is for.</p>
+  <div class="headlines">
+    <div class="headline"><div class="opt">01</div><div><div class="headline-text">Co-Founder & CEO at NegentropyLabs | Building AI for Smarter Food Operations</div><div class="rationale">The clearest founder plus category combination.</div></div><button class="copy" data-copy="Co-Founder & CEO at NegentropyLabs | Building AI for Smarter Food Operations">Copy</button></div>
+    <div class="headline"><div class="opt">02</div><div><div class="headline-text">Co-Founder & CEO, NegentropyLabs | AI for Food Waste Prevention, Traceability & Better Operations</div><div class="rationale">Leads with the problems operators already recognize.</div></div><button class="copy" data-copy="Co-Founder & CEO, NegentropyLabs | AI for Food Waste Prevention, Traceability & Better Operations">Copy</button></div>
+    <div class="headline"><div class="opt">03</div><div><div class="headline-text">Building ODAS | AI-Powered Operational Intelligence for Food & Hospitality | Co-Founder & CEO</div><div class="rationale">Best when product recognition matters most.</div></div><button class="copy" data-copy="Building ODAS | AI-Powered Operational Intelligence for Food & Hospitality | Co-Founder & CEO">Copy</button></div>
+    <div class="headline"><div class="opt">04</div><div><div class="headline-text">Co-Founder & CEO at NegentropyLabs | Turning Food Operations Data Into Action</div><div class="rationale">More conceptual and founder-led, with less jargon.</div></div><button class="copy" data-copy="Co-Founder & CEO at NegentropyLabs | Turning Food Operations Data Into Action">Copy</button></div>
+    <div class="headline"><div class="opt">05</div><div><div class="headline-text">FoodTech Founder | Building AI That Helps Hospitality Teams Predict, Prevent & Act on Food Waste</div><div class="rationale">The strongest problem-led option for a broader audience.</div></div><button class="copy" data-copy="FoodTech Founder | Building AI That Helps Hospitality Teams Predict, Prevent & Act on Food Waste">Copy</button></div>
+  </div>
+</section>
+
+<section id="about" class="section reveal">
+  <div class="kicker">04 / About</div>
+  <h2>Keep the entrepreneurial voice. Give it a sharper destination.</h2>
+  <div class="card" style="margin-top:30px">
+    <div class="label">Current About from the supplied profile export</div>
+    <p>I am a professional focused on innovation, project development, and creating new business opportunities. I am particularly interested in transforming real-world problems into simple, scalable, and impactful solutions by combining strategy, technology, and execution. I enjoy working in dynamic environments, connecting ideas, people, and opportunities, and learning directly from the market to build meaningful projects. I am always open to connecting with entrepreneurs, companies, and professionals eager to create, collaborate, and explore new opportunities.</p>
+  </div>
+  <div class="about-box">
+    <button class="copy" data-copy="I build technology around a simple question: where can food operations become more predictable, measurable, and less wasteful?
+
+As Co-Founder & CEO of NegentropyLabs, I work on ODAS, an AI-powered operational intelligence platform for food and hospitality. ODAS helps teams measure food flows, anticipate waste, improve purchasing and production decisions, recover surplus, and simplify traceability and compliance.
+
+My work sits at the intersection of innovation, business development, technology, and execution. I enjoy turning real operational problems into simple, scalable products, then learning directly from the market to make them better.
+
+I also speak at Universitat Rovira i Virgili, sharing ideas around innovation and the future of technology.
+
+If you are working in food, hospitality, sustainability, or applied AI, let’s connect.">Copy About</button>
+    <div class="label">New About</div>
+    <div class="about-copy">I build technology around a simple question: where can food operations become more predictable, measurable, and less wasteful?
+
+As Co-Founder & CEO of NegentropyLabs, I work on ODAS, an AI-powered operational intelligence platform for food and hospitality. ODAS helps teams measure food flows, anticipate waste, improve purchasing and production decisions, recover surplus, and simplify traceability and compliance.
+
+My work sits at the intersection of innovation, business development, technology, and execution. I enjoy turning real operational problems into simple, scalable products, then learning directly from the market to make them better.
+
+I also speak at Universitat Rovira i Virgili, sharing ideas around innovation and the future of technology.
+
+If you are working in food, hospitality, sustainability, or applied AI, let’s connect.</div>
+  </div>
+</section>
+
+<section id="featured" class="section reveal">
+  <div class="kicker">05 / Featured</div>
+  <h2>Use Featured to prove the story, not repeat it.</h2>
+  <p class="lead">The supplied profile export does not show a populated Featured section. Your public company activity gives you several credible assets that could make this area useful.</p>
+  <div class="featured">
+    <article class="card"><div class="num">OPTION 01</div><h3>ODAS / NegentropyLabs explainer</h3><p>Feature the clearest product explanation so a new visitor can understand the platform before scrolling through posts.</p></article>
+    <article class="card"><div class="num">OPTION 02</div><h3>Alimentaria 2026 pitch</h3><p>Surface the public announcement about being selected for the Food & Hospitality Startup Arena after the ACCIÓ Open Innovation Challenge.</p></article>
+    <article class="card"><div class="num">OPTION 03</div><h3>Founder point of view</h3><p>Feature the “humans by day, machines by night” post as a distinctive example of your thinking about AI, automation, and food operations.</p></article>
+  </div>
+</section>
+
+<section id="banner" class="section reveal">
+  <div class="kicker">06 / Banner</div>
+  <h2>Make the banner answer one question: what are you building?</h2>
+  <div class="banner-box">
+    <div class="label">Current banner</div>
+    <p>The current banner is not visible in the supplied profile export, so there is not enough evidence to assess its exact copy. The opportunity is to use the banner as a fast positioning layer for your current work.</p>
+    <div class="banner-preview"><h3>AI for Smarter <span>Food</span> Operations.<br><small style="font-size:16px;color:#d8dfda;letter-spacing:.08em">Predict. Prevent. Act.</small></h3></div>
+    <h3 style="font-size:25px;margin-top:28px">New banner direction</h3>
+    <p class="muted">Lead with AI plus food operations, then reinforce the message with NegentropyLabs and ODAS. The visual should feel like food-tech, not generic sustainability branding. Your new banner is attached separately.</p>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="kicker">07 / Final positioning shift</div>
+  <h2>From “I work on innovation” to “I build a specific kind of technology.”</h2>
+  <div class="shift">
+    <div class="box"><div class="label">Current</div><div class="quote">Innovation, projects, opportunities, strategy, technology, execution.</div></div>
+    <div class="arrow">→</div>
+    <div class="box" style="background:#102018;color:#fff;border-color:#102018"><div class="label" style="color:#8edda3">New</div><div class="quote">Founder building AI-powered operational intelligence for food and hospitality.</div></div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="cta">
+    <div><div class="kicker" style="color:#8edda3">Next step</div><h2 style="color:#fff;font-size:38px">Make the profile match the company you are building now.</h2><p>Start with the headline and About. Then use Featured to surface the strongest product and thought-leadership proof. The banner supports the same message visually.</p></div>
+    <div class="small" style="color:#9eaaa3">Your new banner is attached separately.</div>
+  </div>
+</section>
+</main>
+
+<footer class="wrap">
+  Prepared for Felipe Ortega. This review uses the supplied profile export plus publicly available professional and company information. Company positioning referenced from NegentropyLabs and ODAS public pages.
+</footer>
+
+<script>
+const copyButtons = document.querySelectorAll('[data-copy]');
+copyButtons.forEach(btn=>{
+  btn.addEventListener('click', async ()=>{
+    const original = btn.textContent;
+    try{
+      await navigator.clipboard.writeText(btn.dataset.copy);
+      btn.textContent='Copied';
+      setTimeout(()=>btn.textContent=original,1400);
+    }catch(e){
+      const area=document.createElement('textarea');
+      area.value=btn.dataset.copy;
+      document.body.appendChild(area);
+      area.select();
+      document.execCommand('copy');
+      area.remove();
+      btn.textContent='Copied';
+      setTimeout(()=>btn.textContent=original,1400);
+    }
+  });
+});
+const reveals = document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+  const io = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{ if(entry.isIntersecting) entry.target.classList.add('visible'); });
+  },{threshold:.12});
+  reveals.forEach(el=>io.observe(el));
+}else reveals.forEach(el=>el.classList.add('visible'));
+</script>
+</body>
+</html>
